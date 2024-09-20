@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade prática 6</title>
+</head>
+<body>
+    <h1>Formulário de Reserva</h1>
+    <form action="" method="post">
+        <fieldset>
+       
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+       
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        
+        <label for="servicos">Serviços Desejados:</label><br>
+        <input type="checkbox" id="passagens" name="servicos" value="compra_passagens">
+        <label for="passagens">Compra de Passagens</label><br>
+        <input type="checkbox" id="hospedagem" name="servicos" value="reserva_hospedagem">
+        <label for="hospedagem">Reserva de Hospedagem</label><br>
+        <input type="checkbox" id="veiculos" name="servicos" value="aluguel_veiculos">
+        <label for="veiculos">Aluguel de Veículos</label><br><br>
+
+     
+        <label for="pagamento">Forma de Pagamento:</label><br>
+        <input type="radio" id="cartao" name="pagamento" value="cartao_credito" required>
+        <label for="cartao">Cartão de Crédito</label><br>
+        <input type="radio" id="boleto" name="pagamento" value="boleto">
+        <label for="boleto">Boleto</label><br>
+        <input type="radio" id="pix" name="pagamento" value="pix">
+        <label for="pix">PIX</label><br><br>
+
+       
+        <label for="prazo">Prazo de Pagamento:</label><br>
+        <select id="prazo" name="prazo" required>
+            <option value="avista">À Vista</option>
+            <option value="duasvezes">2x Sem Juros</option>
+            <option value="tresvezes">3x Sem Juros</option>
+            <option value="quatrovezes">4x Sem Juros</option>
+            <option value="cincovezes">5x Sem Juros</option>
+            <option value="seivezes">6x Sem Juros</option>
+            <option value="setevezes">7x Sem Juros</option>
+            <option value="oitovezes">8x Sem Juros</option>
+            <option value="novevezes">9x Sem Juros</option>
+            <option value="dezvezes">10x Sem Juros</option>
+        </select><br><br>
+
+        
+        <input type="submit" value="Reservar">
+    </fieldset>
+    </form>
+</body>
+</html>
